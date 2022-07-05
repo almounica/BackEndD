@@ -2,7 +2,7 @@ package Mounica;
 
 import java.util.Scanner;
 @SuppressWarnings("serial")
-class MyException extends RuntimeException
+class MyException extends Exception
 {
 	MyException(String s){
 		super(s);
