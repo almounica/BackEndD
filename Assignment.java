@@ -29,7 +29,7 @@ class Emp extends Organisation
 	}
 	void DisplayEmp(Emp e[],int size)
 	{
-		for(int i=0;i<size;i++)
+		for(int i=0;i<=size;i++)
 		{
 			System.out.println(e[i].empid+" "+e[i].name+" "+e[i].dept+" "+e[i].salary+" "+e[i].Oname+" "+e[i].location);
 		}
@@ -68,7 +68,7 @@ public class Assignment {
 
 	public static void main(String[] args) {
 		Boolean ch=true;
-		int size=4;
+		int size=3;
 		Emp e[]=new Emp[5];
 		Scanner sc = new Scanner(System.in);
 		while(ch)
