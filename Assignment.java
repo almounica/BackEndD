@@ -36,7 +36,7 @@ class Emp extends Organisation
 	}
 	void DeleteEmp(Emp e[],int Id) 
 	{
-		for(int i=0;i<e.length;i++)
+		try{for(int i=0;i<e.length;i++)
 		{
 			if(e[i].empid==Id)
 			{
@@ -46,11 +46,18 @@ class Emp extends Organisation
 				}
 			}
 	
-		}
+		}if(Id>=e.length)
+		{
+			throw new MyException("Record not found");
+		}}catch(MyException e2)
+	    {
+			System.out.println(e2.getMessage());
+	    }
+		
 	}
 	void UpdateEmp(Emp e[],int Id,String newname) 
 	{
-		for(int i=0;i<e.length;i++)
+		try{for(int i=0;i<e.length;i++)
 		{
 			if(e[i].empid==Id)
 			{
@@ -60,6 +67,9 @@ class Emp extends Organisation
 			{
 				throw new MyException("Record not found");
 			}
+		}}catch(MyException e1)
+		{
+		System.out.println(e1.getMessage());
 		}
 	}
 }
