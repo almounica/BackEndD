@@ -79,6 +79,7 @@ public class ArraySortRank {
 	        	}
 	        }
 	      System.out.println(rank);  
+	      sc.close();
 	}
 
 }
