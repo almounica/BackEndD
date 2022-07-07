@@ -14,18 +14,6 @@ class Values
     	 return " "+this.value;
      }
 }
-class ValueRanks
-{
-	 int value;
-     int rank;
-
-     public ValueRanks(int value,int rank)
-     {
-         this.value=value;
-         this.rank=rank;
-
-     }
-}
 class Ranks
 {
 	  int rank;
@@ -42,9 +30,7 @@ public class ArraySortRank {
 
 	public static void main(String[] args) {
 		ArrayList<Values> v=new ArrayList<>();
-        ArrayList<ValueRanks> vr =new ArrayList<>();
         ArrayList<Ranks> r=new ArrayList<>();
-
         v.add(new Values(10));
         v.add(new Values(15));
         v.add(new Values(16));
@@ -71,23 +57,18 @@ System.out.println(v);
 
                     }    
                 }
-                vr.add(new ValueRanks(i.value,rank));
+                r.add(new Ranks(rank));
 
                 len=len-1;
 
-        }
-
-            for(ValueRanks i:vr) {
-
-                   r.add(new Ranks(i.rank));
-
-            }    
+        } 
            System.out.println(r);
 
         }
 
     }
 
-	}
+}
+
 
 
