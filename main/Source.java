@@ -1,13 +1,10 @@
 package com.main;
 
 public class Source {
-public String handleException(Activity a) throws TestException, OperatorException
+public String handleException(Activity a) throws TestException
 {
 	if(a.string1==""||a.string2=="") {
 	throw  new  TestException("null value found");}
-	if(!(( a.operator == "+") || (a.operator == "-"))){
-		  throw new  OperatorException("not valid operator");
-	  }
 	return "";
 }
 public String doOperation(Activity a)  {
@@ -24,6 +21,7 @@ public String doOperation(Activity a)  {
 			s3=a.string1.replace(a.string2,"");
 		}
 		break;
+	      default:throw new  OperatorException("not valid operator");
        }
 	
 	return s3;}
