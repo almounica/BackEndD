@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TestMain {
 
-	public static void main(String[] args) throws TestException {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter string 1");
 		String string1=sc.next();
@@ -19,11 +19,13 @@ public class TestMain {
 	    	System.out.println(s.handleException(a));
 	    }catch(TestException e){
 	    	System.out.println(e.getMessage());
+	    }
+           try {
+         System.out.println(s.doOperation(a));
 	    }catch(OperatorException e2)
 	    {
 	    	System.out.println(e2.getMessage());
 	    }
-         System.out.println(s.doOperation(a));
 	    
 	    }
 	 
