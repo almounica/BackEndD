@@ -6,10 +6,8 @@ public class TestMain {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("enter string 1");
-		String string1=sc.next();
-		System.out.println("enter string 2");
-		String string2=sc.next();
+		String string1="";
+		String string2="hello";
 		System.out.println("enter operator");
 		String operator=sc.next();
 		@SuppressWarnings("unused")
