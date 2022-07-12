@@ -7,7 +7,7 @@ public String handleException(Activity a) throws TestException
 	throw  new  TestException("null value found");}
 	return "";
 }
-public String doOperation(Activity a)  {
+public String doOperation(Activity a) throws OperatorException {
 	String s3="";
 	switch(a.operator)
 		{
