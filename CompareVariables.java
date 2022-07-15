@@ -9,7 +9,7 @@ public class CompareVariables {
 	}
 	public static void main(String[] args) {
 		System.out.println(highest(3,7,3));
-        System.out.println(highest("mouni","mou","mounica"));
+        System.out.println(highest("mouni","lalli","ganani"));
         System.out.println(highest(1.1,3.3,0.5));
 	}
 }
