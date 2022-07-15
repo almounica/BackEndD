@@ -23,8 +23,8 @@ public class MainBookInvetoryController {
 		while(ch)
 		{
 			System.out.println("\t 1.Add isbn to books"+" \t 2.Issuebooks"+" \t 3.CheckIssuebooks"+"\t 4.Books reamining after issusing"+"\t 5.Exit");
-			int a=sc.nextInt();
-		switch(a)
+			int choice=sc.nextInt();
+		switch(choice)
 			{
 			case 1:
 			{
