@@ -33,7 +33,7 @@ public class EmployeeMangementServiceImpl implements  EmployeeManagementService 
                String name = sc.next();
                 int b = 0;
                 for (Employee k : e) {
-                    if (name==k.getName()) {
+                    if (name.equals(k.getName())) {
                     	e.remove(k);
                         b++;
                     }
@@ -61,7 +61,7 @@ public class EmployeeMangementServiceImpl implements  EmployeeManagementService 
             	String designation =sc.next();
             	int d = 0;
                 for (Employee k : e) {
-                    if (designation==k.getDesignation()) {
+                    if (designation.equals(k.getDesignation())) {
                         e.remove(k);
                         d++;
                     }
@@ -160,7 +160,7 @@ public class EmployeeMangementServiceImpl implements  EmployeeManagementService 
 	               String name = sc.next();
 	                int b = 0;
 	                for (Employee k : e) {
-	                    if (name==k.getName()) {
+	                    if (name.equals(k.getName())) {
 	                        System.out.println(e + "\n");
 	                        b++;
 	                    }
@@ -174,7 +174,7 @@ public class EmployeeMangementServiceImpl implements  EmployeeManagementService 
 	            	Long salary=sc.nextLong();
 	            	int c = 0;
 	                for (Employee k : e) {
-	                    if (salary==k.getSalary()) {
+	                    if (designation.equals(k.getDesignation())) {
 	                        System.out.println(e + "\n");
 	                        c++;
 	                    }
